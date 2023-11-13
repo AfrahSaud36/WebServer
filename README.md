@@ -28,9 +28,7 @@ Following the response construction, the server transmits the HTTP response over
 
 **Handling File Absence:**
 
-To enhance the server's resilience, it checks for the existence of the requested file. If the file is not found, the server responds with a "404 Not Found" error message, 
+To enhance the server's resilience, it checks for the existence of the requested file. If the file is not found, the server responds with a "404 Not Found" error message, signaling that the requested resource is unavailable.
+
 ![web not](https://github.com/AfrahSaud36/WebServer/assets/138797663/0bb6cb18-f830-4fa2-9dbe-6ce5df4cd946)
 
-
-
-signaling that the requested resource is unavailable.
