@@ -30,7 +30,9 @@ The server attempts to open and read the requested file. If successful, it sends
 **Error Handling:**
 
 In case of an IOError (file not found), the server sends a "404 Not Found" HTTP response along with an HTML message indicating the error.
+
 ![web not](https://github.com/AfrahSaud36/WebServer/assets/138797663/0bb6cb18-f830-4fa2-9dbe-6ce5df4cd946)
+
 **Connection Closure**
 
 After processing the request, the server closes the connection.
