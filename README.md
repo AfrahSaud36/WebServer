@@ -37,7 +37,7 @@ In case of an IOError (file not found), the server sends a "404 Not Found" HTTP 
 
 After processing the request, the server closes the connection.
 
-## Code
+## Python Code
 ```python
 from socket import *
 import sys 
@@ -74,3 +74,4 @@ while True:
         connectionSocket.close()
 serverSocket.close()
 sys.exit()
+
