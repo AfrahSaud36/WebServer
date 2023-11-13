@@ -37,4 +37,6 @@ In case of an IOError (file not found), the server sends a "404 Not Found" HTTP 
 
 After processing the request, the server closes the connection.
 
+## Code
+```python
 
