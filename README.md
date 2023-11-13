@@ -22,6 +22,9 @@ The server receives and decodes the incoming HTTP request. It extracts the filen
 
 The server attempts to open and read the requested file. If successful, it sends an HTTP header indicating success (status code 200 OK) and transmits the file content to the client.
 
+![Uploading webserverpage.png…]()
+
+
 **Error Handling:**
 
 In case of an IOError (file not found), the server sends a "404 Not Found" HTTP response along with an HTML message indicating the error.
