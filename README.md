@@ -6,29 +6,28 @@ In the realm of web development, understanding the fundamentals of web servers i
 
 ## Development Overview:
 
-**Connection Initialization**
+**Server Initialization:**
 
-Our web server begins its journey by creating a connection socket upon receiving a request from a client. This socket serves as the communication bridge between the server and the browser.
+The server socket is created using the AF_INET address family and SOCK_STREAM socket type. The server then binds to a specified IP address and port.
 
-**Request Processing**
+**Connection Handling:**
 
-Once the connection is established, the server receives and processes the incoming HTTP request from the client. This step involves parsing the request to identify the specific file being sought.
+The server enters an infinite loop, continuously listening for incoming connections. When a connection is established, it prints a message and proceeds to handle the request.
 
-**File Retrieval**
+**Request Processing:**
 
-With the target file identified, the server accesses it from its file system. This step is crucial in determining the content that will be included in the HTTP response.
+The server receives and decodes the incoming HTTP request. It extracts the filename from the request to identify the requested resource.
 
-**HTTP Response Construction**
+**File Retrieval and Response Construction:**
 
-The server assembles an HTTP response message, including the requested file preceded by essential header lines. These headers convey vital information about the response, such as content type and length.
+The server attempts to open and read the requested file. If successful, it sends an HTTP header indicating success (status code 200 OK) and transmits the file content to the client.
 
-**Response Transmission:**
+**Error Handling:**
 
-Following the response construction, the server transmits the HTTP response over the TCP connection back to the requesting browser. This action completes the communication cycle between the server and the client.
-
-**Handling File Absence:**
-
-To enhance the server's resilience, it checks for the existence of the requested file. If the file is not found, the server responds with a "404 Not Found" error message, signaling that the requested resource is unavailable.
-
+In case of an IOError (file not found), the server sends a "404 Not Found" HTTP response along with an HTML message indicating the error.
 ![web not](https://github.com/AfrahSaud36/WebServer/assets/138797663/0bb6cb18-f830-4fa2-9dbe-6ce5df4cd946)
+**Connection Closure**
+
+After processing the request, the server closes the connection.
+
 
