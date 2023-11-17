@@ -4,6 +4,9 @@
 
 In the realm of web development, understanding the fundamentals of web servers is crucial. This article will guide you through the process of creating a basic web server in Python that can handle a single request. The server will be capable of establishing a connection with a client (browser), processing HTTP requests, retrieving requested files, and sending back a well-formed HTTP response. Additionally, we'll explore how to handle situations where the requested file is not found, returning a "404 Not Found" error message.
 
+![ex](https://github.com/AfrahSaud36/WebServer/assets/138797663/f1fbc8e2-d667-4ed0-bd29-9dcb9729ac21)
+
+
 ## Development Overview:
 
 **Server Initialization:**
