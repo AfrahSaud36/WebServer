@@ -74,7 +74,7 @@ while True:
             connectionSocket.close()
           
     except IOError:
-        connectionSocket.send("HTTP/1.1 oops not found\r\n\r\n".encode())
+        connectionSocket.send("HTTP/1.1 oops file not found\r\n\r\n".encode())
         connectionSocket.send("<h1>“ 404 Not Found</h1>".encode())
         print('filenotfound')
         connectionSocket.close()
