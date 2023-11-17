@@ -22,6 +22,9 @@ The server receives and decodes the incoming HTTP request. It extracts the filen
 
 The server attempts to open and read the requested file. If successful, it sends an HTTP header indicating success (status code 200 OK) and transmits the file content to the client.
 
+![out finf](https://github.com/AfrahSaud36/WebServer/assets/138797663/edc7e051-9544-4bff-877b-2d56b56b4969)
+
+
 <img width="960" alt="webserverpage" src="https://github.com/AfrahSaud36/WebServer/assets/138797663/9a40ed8a-6675-4839-a02c-6aa61637f10a">
 
 
