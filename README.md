@@ -24,8 +24,8 @@ The server attempts to open and read the requested file. If successful, it sends
 
 ![out finf](https://github.com/AfrahSaud36/WebServer/assets/138797663/edc7e051-9544-4bff-877b-2d56b56b4969)
 
+![web found](https://github.com/AfrahSaud36/WebServer/assets/138797663/b6a627fc-fb5d-47c5-b7ad-00f48ce3581f)
 
-<img width="960" alt="webserverpage" src="https://github.com/AfrahSaud36/WebServer/assets/138797663/9a40ed8a-6675-4839-a02c-6aa61637f10a">
 
 
 
@@ -34,7 +34,10 @@ The server attempts to open and read the requested file. If successful, it sends
 
 In case of an IOError (file not found), the server sends a "404 Not Found" HTTP response along with an HTML message indicating the error.
 
-![web not](https://github.com/AfrahSaud36/WebServer/assets/138797663/0bb6cb18-f830-4fa2-9dbe-6ce5df4cd946)
+![out not find](https://github.com/AfrahSaud36/WebServer/assets/138797663/7a2df69a-ea4c-45bd-b657-b2718be0d2da)
+
+![webnot](https://github.com/AfrahSaud36/WebServer/assets/138797663/7e35dae5-7497-4e33-bb2e-8d07fd892a81)
+
 
 **Connection Closure**
 
